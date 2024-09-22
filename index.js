@@ -4,6 +4,8 @@ const mongoose= require("mongoose");
 const { userRouter } = require("./routes/user");
 const { adminRouter } = require("./routes/admin");
 const { courseRouter } = require("./routes/course");
+const dotenv=require("dotenv");
+dotenv.config();
 const app=express();
 
 app.use("/api/v1/user",userRouter);
